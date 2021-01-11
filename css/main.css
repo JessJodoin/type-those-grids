@@ -48,3 +48,55 @@ h2 {
 p {
   margin: 0 0 1.5rem;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "banner banner banner"
+    "col1   col2   col3";
+  gap: .75rem;
+}
+
+.banner-img {
+  grid-area: banner;
+}
+
+.banner-content {
+  grid-area: banner;
+  align-self: end;
+  color: #fff;
+  padding: 1.5rem 1rem;
+}
+
+.banner-content h2 {
+  margin-bottom: 0;
+}
+
+.banner-content p {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figure h2 {
+  margin-bottom: 0;
+}
+
+figcaption {
+  padding: 1rem;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-style: italic;
+}
+
+dd {
+  margin-left: 1rem;
+}
